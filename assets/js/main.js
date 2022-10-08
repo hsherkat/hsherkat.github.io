@@ -6,8 +6,8 @@
 
 let bodyElement = document.querySelector("body");
 bodyElement.addEventListener("click", (e) => {
+  console.log(e);
   if (400 < e.clientX && e.clientX < 440 && 60 < e.clientY && e.clientY < 78) {
-    console.log(e);
     console.log("you like to party???");
   }
 });
