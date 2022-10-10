@@ -5,7 +5,7 @@
 */
 
 var audio = document.getElementById("music");
-audio.volume = 0.1;
+audio.volume = 0.03;
 
 (function ($) {
   var $window = $(window),
