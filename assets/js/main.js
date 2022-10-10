@@ -4,12 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-let bodyElement = document.querySelector("body");
-bodyElement.addEventListener("click", (e) => {
-  if (400 < e.clientX && e.clientX < 440 && 60 < e.clientY && e.clientY < 78) {
-    console.log("oh, you like to party???");
-  }
-});
+var audio = document.getElementById("music");
+audio.volume = 0.3;
 
 (function ($) {
   var $window = $(window),
@@ -180,3 +176,10 @@ bodyElement.addEventListener("click", (e) => {
     });
   }
 })(jQuery);
+
+let bodyElement = document.querySelector("body");
+bodyElement.addEventListener("click", (e) => {
+  if (400 < e.clientX && e.clientX < 440 && 60 < e.clientY && e.clientY < 78) {
+    console.log("oh, you like to party???");
+  }
+});
