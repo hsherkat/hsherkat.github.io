@@ -4,7 +4,21 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+songList = [
+  "spooky",
+  "creepy",
+  "graveyard",
+  "ghouls",
+  "lacrimosa",
+  "mass",
+  "midnight",
+];
+randomIndex = Math.floor(Math.random() * songList.length);
+randomSong = songList[randomIndex];
+songPath = "sounds/" + randomSong + ".mp3";
+
 var audio = document.getElementById("music");
+audio.src = songPath;
 audio.volume = 0.03;
 
 (function ($) {
