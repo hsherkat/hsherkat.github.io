@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* spooky stuff starts here - remove after Halloween */
 songList = [
   "spooky",
   "creepy",
@@ -27,6 +28,13 @@ body.addEventListener("click", () => {
   audio.play();
 });
 audio.volume = 0.03;
+
+body.addEventListener("animationiteration", () => {
+  var duration = 10 + Math.floor(Math.random() * 20);
+  body.style.setProperty("--animation-time", duration + "s");
+});
+
+/* spooky stuff ends here - remove after Halloween */
 
 (function ($) {
   var $window = $(window),

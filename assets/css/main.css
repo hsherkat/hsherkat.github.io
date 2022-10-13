@@ -1312,6 +1312,35 @@ input, select, textarea {
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
+	/* vvv spooky stuff - remove after Halloween vvv */
+	:root {
+		--animation-time: 20s; 
+	  }
+	body {
+		background-image: url("images/overlay.png"), url("images/spooky.jpg");
+		background-repeat: repeat, no-repeat;
+		background-size: auto, cover;
+		background-attachment: fixed;
+		overflow-y: scroll;
+		animation-duration: var(--animation-time);
+		animation-name: lightning;
+		animation-iteration-count: infinite;
+	}
+	@keyframes lightning {
+		0% {backdrop-filter: brightness(1);}
+		49% {backdrop-filter: brightness(1);}
+		50% {backdrop-filter: brightness(3);}
+		51% {backdrop-filter: brightness(1);}
+		85% {backdrop-filter: brightness(1);}
+		86% {backdrop-filter: brightness(3);}
+		87% {backdrop-filter: brightness(1);}
+		88% {backdrop-filter: brightness(1);}
+		89% {backdrop-filter: brightness(3);}
+		93% {backdrop-filter: brightness(1);}
+		100% {backdrop-filter: brightness(1);}
+	}
+	/* ^^^ spooky stuff - remove after Halloween ^^^ */
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
