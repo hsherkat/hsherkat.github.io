@@ -18,7 +18,9 @@ randomSong = songList[randomIndex];
 songPath = "sounds/" + randomSong + ".mp3";
 
 var audio = document.getElementById("music");
+var source = document.querySelector("#music source");
 audio.src = songPath;
+source.src = songPath;
 
 body = document.querySelector("body");
 body.addEventListener("click", () => {
