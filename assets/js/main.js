@@ -19,6 +19,11 @@ songPath = "sounds/" + randomSong + ".mp3";
 
 var audio = document.getElementById("music");
 audio.src = songPath;
+
+body = document.querySelector("body");
+body.addEventListener("click", () => {
+  audio.play();
+});
 audio.volume = 0.03;
 
 (function ($) {
