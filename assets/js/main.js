@@ -18,8 +18,8 @@ randomIndex = Math.floor(Math.random() * songList.length);
 randomSong = songList[randomIndex];
 songPath = "sounds/" + randomSong + ".mp3";
 
-var audio = document.getElementById("music");
-var source = document.querySelector("#music source");
+let audio = document.getElementById("music");
+let source = document.querySelector("#music source");
 audio.src = songPath;
 source.src = songPath;
 
@@ -30,7 +30,7 @@ body.addEventListener("click", () => {
 audio.volume = 0.03;
 
 body.addEventListener("animationiteration", () => {
-  var duration = 10 + Math.floor(Math.random() * 20);
+  let duration = 10 + Math.floor(Math.random() * 20);
   body.style.setProperty("--animation-time", duration + "s");
 });
 
