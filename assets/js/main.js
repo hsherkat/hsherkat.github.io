@@ -23,10 +23,9 @@ let source = document.querySelector("#music source");
 audio.src = songPath;
 source.src = songPath;
 
+let audioPlay = () => audio.play();
+
 body = document.querySelector("body");
-body.addEventListener("click", () => {
-  audio.play();
-});
 audio.volume = 0.03;
 
 body.addEventListener("animationiteration", () => {
@@ -34,6 +33,19 @@ body.addEventListener("animationiteration", () => {
   body.style.setProperty("--animation-time", duration + "s");
 });
 
+defaultToggle = document.querySelector(".default-toggle");
+defaultToggle.addEventListener("click", () => {
+  body.classList.remove("spooky");
+  audio.pause();
+  audio.currentTime = 0;
+});
+
+spookyToggle = document.querySelector(".spooky-toggle");
+spookyToggle.addEventListener("click", () => {
+  audioPlay();
+  body.classList.add("spooky");
+  audio.volume = 0.03;
+});
 /* spooky stuff ends here - remove after Halloween */
 
 (function ($) {
