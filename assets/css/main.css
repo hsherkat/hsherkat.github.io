@@ -1333,6 +1333,7 @@ input, select, textarea {
 		width: 20%;
 		text-align: center;
 		border-radius: 10px;
+		cursor: pointer;
 	}
 	@keyframes lightning {
 		0% {backdrop-filter: brightness(1);}
