@@ -1326,6 +1326,9 @@ input, select, textarea {
 		animation-name: lightning;
 		animation-iteration-count: infinite;
 	}
+	body.spooky #nav a {
+		color:  rgb(112, 4, 4);
+	}
 	.toggle {
 		border: 2px solid salmon;
 		margin: 6px;
@@ -1334,6 +1337,9 @@ input, select, textarea {
 		text-align: center;
 		border-radius: 10px;
 		cursor: pointer;
+	}
+	body.spooky .toggle{
+		border: 2px solid  rgb(112, 4, 4);
 	}
 	@keyframes lightning {
 		0% {backdrop-filter: brightness(1);}
@@ -1825,6 +1831,7 @@ input, select, textarea {
 		text-align: center;
 		height: 4.25em;
 		cursor: default;
+		display: flex;
 	}
 
 		#nav a {
