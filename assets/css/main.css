@@ -1758,6 +1758,9 @@ input, select, textarea {
 			padding-left: 0.25em;
 		}
 
+	#interests {
+		list-style-type: none;
+	}
 /* Actions */
 
 	ul.actions {
