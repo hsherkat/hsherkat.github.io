@@ -45,6 +45,8 @@ spookyToggle = document.querySelector(".spooky-toggle");
 spookyToggle.addEventListener("click", () => {
   body.classList.remove("spooky");
   body.classList.remove("autumn");
+  audio.src = songPath;
+  source.src = songPath;
   audioPlay();
   body.classList.add("spooky");
   audio.volume = 0.03;
@@ -62,7 +64,19 @@ autumnToggle.addEventListener("click", () => {
   source.src = soundPath;
   audioPlay();
   audio.volume = 0.3;
+  randomizeLeaves();
 });
+
+function randomizeLeaves() {
+  const leaves = document.querySelectorAll("#leaves i");
+  const leaves_arr = Array.from(leaves);
+
+  leaves_arr.map((leaf, idx) => {
+    delay = (7 * Math.random()).toFixed(2) + "s";
+    leaf.style.setProperty("-webkit-animation-delay", delay);
+  });
+}
+
 /* THEME STUFF ends here */
 
 (function ($) {

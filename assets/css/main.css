@@ -1516,28 +1516,7 @@ input, select, textarea {
 	#leaves i:nth-of-type(2n) { -webkit-animation: falling2 8s 0s infinite; }
 	#leaves i:nth-of-type(3n) { -webkit-animation: falling3 8s 0s infinite; }
 	
-	#leaves i:nth-of-type(n)   { -webkit-animation-delay: 1.9s;}
-	#leaves i:nth-of-type(2n)  { -webkit-animation-delay: 3.9s;}
-	#leaves i:nth-of-type(3n+1)  { -webkit-animation-delay: 2.3s;}
-	#leaves i:nth-of-type(4n+3)  { -webkit-animation-delay: 4.4s;}
-	#leaves i:nth-of-type(4n)  { -webkit-animation-delay: 4.7s;}
-	#leaves i:nth-of-type(5n)  { -webkit-animation-delay: 5s;  }
-	#leaves i:nth-of-type(5n+3)  { -webkit-animation-delay: 5.1s;  }
-	#leaves i:nth-of-type(5n+4)  { -webkit-animation-delay: 5.4s;  }
-	#leaves i:nth-of-type(6n)  { -webkit-animation-delay: 3.5s;}
-	#leaves i:nth-of-type(6n+2)  { -webkit-animation-delay: 3.6s;}
-	#leaves i:nth-of-type(7n)  { -webkit-animation-delay: 2.8s;}
-	#leaves i:nth-of-type(7n+4)  { -webkit-animation-delay: 2.9s;}
-	#leaves i:nth-of-type(8n)  { -webkit-animation-delay: 1.5s;}
-	#leaves i:nth-of-type(8n+3)  { -webkit-animation-delay: 1.2s;}
-	#leaves i:nth-of-type(9n)  { -webkit-animation-delay: 3.3s;}
-	#leaves i:nth-of-type(9n+5)  { -webkit-animation-delay: 3s;}
-	#leaves i:nth-of-type(10n) { -webkit-animation-delay: 2.5s;}
-	#leaves i:nth-of-type(11n) { -webkit-animation-delay: 1.2s;}
-	#leaves i:nth-of-type(12n) { -webkit-animation-delay: 4.1s;}
-	#leaves i:nth-of-type(13n) { -webkit-animation-delay: 1s;  }
-	#leaves i:nth-of-type(14n) { -webkit-animation-delay: 4.7s;}
-	#leaves i:nth-of-type(15n) { -webkit-animation-delay: 3s;  }
+
 	
 	/* ^^^ THEME STUFF ^^^ */
 
