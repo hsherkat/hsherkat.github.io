@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* spooky stuff starts here - remove after Halloween */
+/* THEME STUFF starts here */
 songList = [
   "spooky",
   "creepy",
@@ -36,17 +36,29 @@ body.addEventListener("animationiteration", () => {
 defaultToggle = document.querySelector(".default-toggle");
 defaultToggle.addEventListener("click", () => {
   body.classList.remove("spooky");
+  body.classList.remove("autumn");
   audio.pause();
   audio.currentTime = 0;
 });
 
 spookyToggle = document.querySelector(".spooky-toggle");
 spookyToggle.addEventListener("click", () => {
+  body.classList.remove("spooky");
+  body.classList.remove("autumn");
   audioPlay();
   body.classList.add("spooky");
   audio.volume = 0.03;
 });
-/* spooky stuff ends here - remove after Halloween */
+
+autumnToggle = document.querySelector(".autumn-toggle");
+autumnToggle.addEventListener("click", () => {
+  body.classList.remove("spooky");
+  body.classList.remove("autumn");
+  audio.pause();
+  audio.currentTime = 0;
+  body.classList.add("autumn");
+});
+/* THEME STUFF ends here */
 
 (function ($) {
   var $window = $(window),
