@@ -65,6 +65,7 @@ autumnToggle.addEventListener("click", () => {
   audioPlay();
   audio.volume = 0.3;
   randomizeLeaves();
+  const meImg = document.querySelector("#home img");
 });
 
 function randomizeLeaves() {

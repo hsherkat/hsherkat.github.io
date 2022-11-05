@@ -1369,13 +1369,24 @@ input, select, textarea {
 	}
 
 	body.autumn {
-		background-image: url("images/overlay.png"), linear-gradient(to bottom right,#E8BD48, #F7912C, #D0501F, #7B2917);
+		background-image: url("images/overlay.png"), linear-gradient(to bottom right,#E8BD48, #F7912C, #D0501F);
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
-
+	body.autumn #home img {
+		display: none;
+	}
+	body.autumn #home a::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image:  linear-gradient(to top left, #f7d527, #ebba18, #e69816,  #e18421, #db710e, #d45f05);
+	}
 
 	body #leaves {
 		display: none;
