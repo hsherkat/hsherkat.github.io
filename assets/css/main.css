@@ -1368,6 +1368,15 @@ input, select, textarea {
 		100% {-webkit-backdrop-filter: brightness(1);}
 	}
 
+	body.autumn {
+		background-image: url("images/overlay.png"), linear-gradient(to bottom right,#E8BD48, #F7912C, #D0501F);
+		background-repeat: repeat, no-repeat;
+		background-size: auto, 100% 100%;
+		background-attachment: fixed;
+		overflow-y: scroll;
+	}
+
+
 	body #leaves {
 		display: none;
 	}
