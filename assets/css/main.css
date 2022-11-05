@@ -1312,7 +1312,10 @@ input, select, textarea {
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
+
 	/* vvv THEME STUFF vvv */
+
+	/* vvv SPOOKY vvv */
 	:root {
 		--animation-time: 20s; 
 	  }
@@ -1368,6 +1371,7 @@ input, select, textarea {
 		100% {-webkit-backdrop-filter: brightness(1);}
 	}
 
+	/* vvv AUTUMN vvv */
 	body.autumn {
 		background-image: url("images/overlay.png"), linear-gradient(to bottom right,#E8BD48, #F7912C, #D0501F);
 		background-repeat: repeat, no-repeat;
@@ -1526,8 +1530,6 @@ input, select, textarea {
 	
 	#leaves i:nth-of-type(2n) { -webkit-animation: falling2 8s 0s infinite; }
 	#leaves i:nth-of-type(3n) { -webkit-animation: falling3 8s 0s infinite; }
-	
-
 	
 	/* ^^^ THEME STUFF ^^^ */
 
