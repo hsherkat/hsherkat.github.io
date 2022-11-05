@@ -1411,7 +1411,7 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 1px #222;
 		border: 1px solid #333;
 		z-index: 1;
-		-webkit-animation: falling 5s 0s infinite;
+		-webkit-animation: falling 8s 0s infinite;
 	}
 	
 	#leaves i:before {
@@ -1513,8 +1513,8 @@ input, select, textarea {
 		}
 	}
 	
-	#leaves i:nth-of-type(2n) { -webkit-animation: falling2 5s 0s infinite; }
-	#leaves i:nth-of-type(3n) { -webkit-animation: falling3 5s 0s infinite; }
+	#leaves i:nth-of-type(2n) { -webkit-animation: falling2 8s 0s infinite; }
+	#leaves i:nth-of-type(3n) { -webkit-animation: falling3 8s 0s infinite; }
 	
 	#leaves i:nth-of-type(n)   { -webkit-animation-delay: 1.9s;}
 	#leaves i:nth-of-type(2n)  { -webkit-animation-delay: 3.9s;}
