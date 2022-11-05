@@ -57,6 +57,11 @@ autumnToggle.addEventListener("click", () => {
   audio.pause();
   audio.currentTime = 0;
   body.classList.add("autumn");
+  soundPath = "sounds/fireplace.mp3";
+  audio.src = soundPath;
+  source.src = soundPath;
+  audioPlay();
+  audio.volume = 0.3;
 });
 /* THEME STUFF ends here */
 
