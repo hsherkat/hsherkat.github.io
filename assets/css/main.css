@@ -1360,26 +1360,26 @@ input, select, textarea {
 	@keyframes lightning {
 		0% {backdrop-filter: brightness(1);}
 		49% {backdrop-filter: brightness(1);}
-		50% {backdrop-filter: brightness(3);}
+		50% {backdrop-filter: brightness(4);}
 		51% {backdrop-filter: brightness(1);}
 		85% {backdrop-filter: brightness(1);}
-		86% {backdrop-filter: brightness(3);}
+		86% {backdrop-filter: brightness(4);}
 		87% {backdrop-filter: brightness(1);}
 		88% {backdrop-filter: brightness(1);}
-		89% {backdrop-filter: brightness(3);}
+		89% {backdrop-filter: brightness(4);}
 		93% {backdrop-filter: brightness(1);}
 		100% {backdrop-filter: brightness(1);}
 	}
 	@-webkit-keyframes lightning {
 		0% {-webkit-backdrop-filter: brightness(1);}
 		49% {-webkit-backdrop-filter: brightness(1);}
-		50% {-webkit-backdrop-filter: brightness(3);}
+		50% {-webkit-backdrop-filter: brightness(4);}
 		51% {-webkit-backdrop-filter: brightness(1);}
 		85% {-webkit-backdrop-filter: brightness(1);}
-		86% {-webkit-backdrop-filter: brightness(3);}
+		86% {-webkit-backdrop-filter: brightness(4);}
 		87% {-webkit-backdrop-filter: brightness(1);}
 		88% {-webkit-backdrop-filter: brightness(1);}
-		89% {-webkit-backdrop-filter: brightness(3);}
+		89% {-webkit-backdrop-filter: brightness(4);}
 		93% {-webkit-backdrop-filter: brightness(1);}
 		100% {-webkit-backdrop-filter: brightness(1);}
 	}
