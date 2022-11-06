@@ -35,38 +35,50 @@ body.addEventListener("animationiteration", () => {
 
 defaultToggle = document.querySelector(".default-toggle");
 defaultToggle.addEventListener("click", () => {
-  body.classList.remove("spooky");
-  body.classList.remove("autumn");
-  audio.pause();
-  audio.currentTime = 0;
+  clearThemes();
+  stopMusic();
 });
 
 spookyToggle = document.querySelector(".spooky-toggle");
 spookyToggle.addEventListener("click", () => {
-  body.classList.remove("spooky");
-  body.classList.remove("autumn");
-  audio.src = songPath;
-  source.src = songPath;
-  audioPlay();
+  clearThemes();
+  playSpooky();
   body.classList.add("spooky");
-  audio.volume = 0.03;
 });
 
 autumnToggle = document.querySelector(".autumn-toggle");
 autumnToggle.addEventListener("click", () => {
-  body.classList.remove("spooky");
-  body.classList.remove("autumn");
-  audio.pause();
-  audio.currentTime = 0;
+  clearThemes();
+  stopMusic();
+  playFireplace();
   body.classList.add("autumn");
+  randomizeLeaves();
+});
+
+function playSpooky() {
+  audio.src = songPath;
+  source.src = songPath;
+  audioPlay();
+  audio.volume = 0.03;
+}
+
+function playFireplace() {
   soundPath = "sounds/fireplace.mp3";
   audio.src = soundPath;
   source.src = soundPath;
   audioPlay();
   audio.volume = 0.3;
-  randomizeLeaves();
-  const meImg = document.querySelector("#home img");
-});
+}
+
+function stopMusic() {
+  audio.pause();
+  audio.currentTime = 0;
+}
+
+function clearThemes() {
+  body.classList.remove("spooky");
+  body.classList.remove("autumn");
+}
 
 function randomizeLeaves() {
   const leaves = document.querySelectorAll("#leaves i");
