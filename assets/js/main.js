@@ -5,7 +5,7 @@
 */
 
 /* THEME STUFF starts here */
-songList = [
+const songList = [
   "spooky",
   "creepy",
   "graveyard",
@@ -14,9 +14,9 @@ songList = [
   "mass",
   "midnight",
 ];
-randomIndex = Math.floor(Math.random() * songList.length);
-randomSong = songList[randomIndex];
-songPath = "sounds/" + randomSong + ".mp3";
+let randomIndex = Math.floor(Math.random() * songList.length);
+let randomSong = songList[randomIndex];
+let songPath = "sounds/" + randomSong + ".mp3";
 
 let audio = document.getElementById("music");
 let source = document.querySelector("#music source");
@@ -42,6 +42,7 @@ defaultToggle.addEventListener("click", () => {
 spookyToggle = document.querySelector(".spooky-toggle");
 spookyToggle.addEventListener("click", () => {
   clearThemes();
+  stopMusic();
   playSpooky();
   body.classList.add("spooky");
 });
