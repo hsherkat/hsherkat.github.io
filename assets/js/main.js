@@ -61,6 +61,7 @@ festiveToggle.addEventListener("click", () => {
   clearThemes();
   stopMusic();
   body.classList.add("festive");
+  playFestive();
 });
 
 function playSpooky() {
@@ -76,6 +77,14 @@ function playFireplace() {
   source.src = soundPath;
   audioPlay();
   audio.volume = 0.3;
+}
+
+function playFestive() {
+  soundPath = "sounds/festive.mp3";
+  audio.src = soundPath;
+  source.src = soundPath;
+  audioPlay();
+  audio.volume = 0.03;
 }
 
 function stopMusic() {

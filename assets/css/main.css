@@ -1553,10 +1553,38 @@ input, select, textarea {
 	body .festive {
 		display: none;
 	}
+	body.festive {
+		background-image: url("images/overlay.png"), url("images/festive.jpg");
+		background-repeat: repeat, no-repeat;
+		background-size: auto, cover;
+		background-attachment: fixed;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	body.festive #home a::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image:  url("images/bg-festive2.jpg");
+		background-size: cover;
+	}
 
 	body.festive .festive {
 		display: block;
 	}
+
+	body.festive #nav a {
+		color:  rgb(214,0,28);
+	}
+
+
+	body.festive .toggle{
+		border: 2px solid  rgb(214,0,28);
+	}
+
 
 
 	/* ^^^ THEME STUFF ^^^ */
