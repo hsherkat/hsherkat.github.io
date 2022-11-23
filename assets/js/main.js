@@ -56,6 +56,13 @@ autumnToggle.addEventListener("click", () => {
   randomizeLeaves();
 });
 
+festiveToggle = document.querySelector(".festive-toggle");
+festiveToggle.addEventListener("click", () => {
+  clearThemes();
+  stopMusic();
+  body.classList.add("festive");
+});
+
 function playSpooky() {
   audio.src = songPath;
   source.src = songPath;
@@ -79,6 +86,7 @@ function stopMusic() {
 function clearThemes() {
   body.classList.remove("spooky");
   body.classList.remove("autumn");
+  body.classList.remove("festive");
 }
 
 function randomizeLeaves() {
