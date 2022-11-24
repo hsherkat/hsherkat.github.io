@@ -84,7 +84,7 @@ function playFestive() {
   audio.src = soundPath;
   source.src = soundPath;
   audioPlay();
-  audio.volume = 0.01;
+  audio.volume = 0.03;
 }
 
 function stopMusic() {
